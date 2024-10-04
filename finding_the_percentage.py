@@ -12,4 +12,4 @@ if __name__ == '__main__':
         count+=i
     count = float(count)
     final_ans = count/3
-    print("%.2f" % final_ans)
+    print("%.2f" % final_ans) #used to get 2 decimal points in a number
