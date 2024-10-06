@@ -10,9 +10,9 @@
 def print_full_name(first, last):
     # Write your code here
     if len(first)<=10 and len(last)<=10:
-        return f"Hello {first} {last}! You just delved into python"
+        print(f"Hello {first} {last}! You just delved into python.")
     else:
-        return "Please enter a valid input"
+        print("Please enter a valid input")
 
 if __name__ == '__main__':
     first_name = input()
