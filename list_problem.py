@@ -20,3 +20,4 @@ if __name__ == '__main__':
             l.reverse()
         else:
             print("Please enter a valid command")
+            
