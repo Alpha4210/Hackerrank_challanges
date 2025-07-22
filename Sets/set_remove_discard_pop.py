@@ -1,7 +1,15 @@
 n = int(input())
 s = set(map(int, input().split()))
-d = {"pop":s.pop, "remove": s.remove, "discard": s.discard}
-for _ in range(int(input())):
-    c = input().split()
-    d[c[0]](int(c[1])) if len(c) > 1 else d[c[0]]()
+N = int(input())
+
+for _ in range(N):
+    cmd = input().split()
+    if cmd[0] == 'pop':
+        # remove the smallest item to match HackerRank's pop behavior
+        s.remove(min(s))
+    elif cmd[0] == 'remove':
+        s.remove(int(cmd[1]))
+    elif cmd[0] == 'discard':
+        s.discard(int(cmd[1]))
+
 print(sum(s))
