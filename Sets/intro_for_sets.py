@@ -1,14 +1,11 @@
 
 
 def average(array):
-    s1 = set()
-    for i in array:
-        s1.add(i)
+    s = set(array)
     sum = 0
-    for i in s1:
-       sum = sum+i
-    avg = round(sum/len(s1),3)
-    return avg 
+    for i in s:
+        sum+=i
+    return round(sum/len(s),3)
 
 if __name__ == '__main__':
     n = int(input())
